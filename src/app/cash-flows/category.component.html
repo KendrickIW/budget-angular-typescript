@@ -1,0 +1,39 @@
+<div class="col-md-6">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">
+        <span class="glyphicon {{$ctrl.iconClassMap[$ctrl.category.title]}}"  aria-hidden="true"></span>
+        {{$ctrl.category.title}}
+      </h3>
+    </div>
+    <ul class="list-group">
+      <!-- <li class="list-group-item">
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-5">Tithes</div>
+          <div class="col-md-3"><click-edit value='0'></click-edit></div>
+          <div class="col-md-3"><click-edit value='0'></click-edit></div>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-5">Charity & Offering</div>
+          <div class="col-md-3">200</div>
+          <div class="col-md-3">410</div>
+        </div>
+      </li> -->
+    </ul>
+    <div class="panel-body" ng-show="$ctrl.active">
+      <input id="new-budget-item" name="new-budget-item" type="text" class="form-control">
+    </div>
+    <div class="panel-footer brand-primary clickable" ng-click="$ctrl.active = true" ng-hide="$ctrl.active">
+      Add Budget Item...
+    </div>
+    <div class="panel-footer brand-primary clickable" ng-show="$ctrl.active">
+      <button class="btn btn-success" name="button">Add</button>
+    </div>
+  </div>
+</div>
+</div>
+</div>

@@ -1,0 +1,14 @@
+.clickable {
+  cursor: pointer;
+}
+
+.panel-footer {
+}
+
+.danger {
+  background-color: #d9534f;
+}
+
+.panel-footer:hover {
+  text-decoration: underline;
+}
